@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="320" id="KGk-i7-Jjw" customClass="RocketListCell" customModule="spaceX" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="airplane" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="h9F-17-0xL">
+                        <rect key="frame" x="10" y="15.5" width="300" height="127"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="2Vh-iK-oJa"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLl-D8-J0l">
+                        <rect key="frame" x="260" y="19.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="5js-uR-alS"/>
+                            <constraint firstAttribute="height" constant="40" id="NXQ-fC-RaO"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" backgroundImage="star" catalog="system"/>
+                        <state key="selected" image="star.fill" catalog="system"/>
+                    </button>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gIR-fx-wTh">
+                        <rect key="frame" x="26" y="153" width="268" height="85"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmP-e8-2t7">
+                                <rect key="frame" x="0.0" y="0.0" width="268" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="E0r-Jn-sN7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZoD-6U-aHm">
+                                <rect key="frame" x="0.0" y="30" width="268" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIt-jM-6Ta">
+                                <rect key="frame" x="0.0" y="60" width="268" height="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="gIR-fx-wTh" secondAttribute="bottom" constant="5" id="1ym-co-Lam"/>
+                    <constraint firstAttribute="trailing" secondItem="DLl-D8-J0l" secondAttribute="trailing" constant="20" id="4qt-Oq-afj"/>
+                    <constraint firstItem="DLl-D8-J0l" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="HHE-wI-lKm"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="gIR-fx-wTh" secondAttribute="trailing" constant="10" id="bi9-Bc-LwB"/>
+                    <constraint firstItem="gIR-fx-wTh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="hst-YW-XiY"/>
+                    <constraint firstItem="h9F-17-0xL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="nRp-4S-PP8"/>
+                    <constraint firstItem="h9F-17-0xL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="rEz-b3-0j7"/>
+                    <constraint firstAttribute="trailing" secondItem="h9F-17-0xL" secondAttribute="trailing" constant="10" id="tq8-NK-Gtx"/>
+                    <constraint firstItem="gIR-fx-wTh" firstAttribute="top" secondItem="h9F-17-0xL" secondAttribute="bottom" constant="10" id="wN7-4M-8oj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnStar" destination="DLl-D8-J0l" id="Ngx-IW-Sgb"/>
+                <outlet property="imgRocket" destination="h9F-17-0xL" id="XvX-qJ-W5i"/>
+                <outlet property="lblrocket_id" destination="ZmP-e8-2t7" id="bR7-mH-VYa"/>
+                <outlet property="lblrocket_name" destination="ZoD-6U-aHm" id="gJc-5H-4Mg"/>
+                <outlet property="lblrocket_type" destination="PIt-jM-6Ta" id="SUa-eC-Aa0"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="170.75892857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="airplane" catalog="system" width="128" height="115"/>
+        <image name="star" catalog="system" width="128" height="116"/>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+    </resources>
+</document>
